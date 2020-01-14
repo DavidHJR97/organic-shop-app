@@ -1,0 +1,20 @@
+.card { 
+    margin-bottom: 30px;
+  }
+  
+  .card-img-top { 
+    height: 200px;
+  }
+  
+  .card-footer {
+    padding: 0;
+    background: #fff;
+    margin: 0;
+    border : 0;
+    margin-left: -1px;
+  }
+  
+  .card-footer button {
+    cursor: pointer;
+    text-transform: uppercase;
+  } 

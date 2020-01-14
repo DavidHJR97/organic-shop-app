@@ -1,0 +1,22 @@
+<form #f="ngForm">
+  <div class="form-group col-md-6">
+    <label for="email">Email address</label>
+    <input #email="ngModel" name="email" [(ngModel)]="userSignIn.email" type="text" class="form-control" required>
+  </div>
+  <div class="form-group col-md-4">
+    <label for="password">Password</label>
+    <input #password="ngModel" name="password" [(ngModel)]="userSignIn.password" type="password" class="form-control"
+      required>
+  </div>
+  <div class="form-group col-md-4">
+    <button (click)="signIn()"  [disabled]="!f.valid"  class="btn btn-primary">Sign in</button>
+  </div>
+</form>
+&nbsp;
+<div class="form-group col-md-6">
+  <button (click)="login()" class="btn btn-outline-primary">Login with Google</button>&nbsp;
+  <button (click)="register()" class="btn btn-outline-secondary">Register</button>
+</div>
+<div class="form-group col-md-6">
+  <div class="alert alert-danger" *ngIf="errors">{{ errors }}</div>
+</div>

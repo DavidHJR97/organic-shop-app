@@ -1,0 +1,23 @@
+.quantity {
+    height: 37px;
+    line-height: 37px;
+  } 
+
+  
+.flex-center-align {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+@media(max-width: 500px) {
+  .sm-setup {
+      width: 100%;
+      padding: 0 25px;
+      margin: 0 25px;
+  }
+}
